@@ -1,11 +1,13 @@
 import React from 'react';
-import './../App.css';
+import style from './Header.module.css';
 
 
 const Header = () => {
-  return   <header className='header'>
-        <img src='./../logo.png' className='logo' alt='logo'/>
+  return   <header className={style.header}>
+      <div>
+        <img src="./back.jpg" alt='logo' className={style.logo}/>
+      </div>
     </header>
-}
+};
 
 export default Header;
