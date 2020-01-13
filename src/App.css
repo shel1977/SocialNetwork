@@ -1,0 +1,31 @@
+.app-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 1fr 1fr;
+  grid-template-areas: "header header header header" "nav content content content" "nav content content content";
+  height: 100%;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: gray;
+}
+.logo {
+width: 120px;
+  border: black solid 1px;
+}
+
+.profileImg {
+  border: black solid 1px;
+}
+.nav {
+  grid-area: nav;
+  background-color: cadetblue;
+}
+
+.content {
+  width: 1200px;
+  grid-area: content;
+  background-color: azure;
+}
