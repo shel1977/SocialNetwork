@@ -5,7 +5,7 @@ import style from './Header.module.css';
 const Header = () => {
   return   <header className={style.header}>
       <div>
-        <img src="./back.jpg" alt='logo' className={style.logo}/>
+        <img src={require('../../logo.png')} alt='logo' className={style.logo}/>
       </div>
     </header>
 };

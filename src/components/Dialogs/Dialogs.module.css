@@ -1,0 +1,25 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.dialogsItem {
+    padding: 10px;
+}
+
+.dialog a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+.dialog a.activeLink {
+    color: black;
+}
+
+.messages {
+    padding: 10px;
+}
+
+.sendMessageArea{
+    margin: 30px 0 0 30px;
+}
