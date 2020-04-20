@@ -4,10 +4,8 @@ import SideBarFriend from "./SideBarFriend/SideBarFriend";
 
 
 const SideBar = (props) => {
-
-    let sideBarFriend = props.sideBar
-        .map(i => <SideBarFriend name={i.name}
-                                 id={i.id}/>);
+    let sideBarFriendsMap = props.sideBar;
+    let sideBarFriend = sideBarFriendsMap.map(i => <SideBarFriend name={i.name} id={i.id} key={i.id}/>);
 
     return (
         <div>

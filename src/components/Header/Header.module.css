@@ -6,3 +6,16 @@
   padding-top: 10px;
   width: 120px;
 }
+
+.loginBlock  {
+  float: right;
+  margin: 30px 10px 0 0;
+  color: azure;
+}
+
+
+
+.loginText {
+  color: azure;
+}
+

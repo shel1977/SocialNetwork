@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
-import SideBar from "./sideBar/SideBar";
+import SideBarContainer from "./sideBar/SideBarContainer";
 
 
-const Navbar = (props) => {
+const Navbar = () => {
     return (
         <div className={style.nav}>
 
@@ -19,12 +19,15 @@ const Navbar = (props) => {
                         <NavLink to='/news' activeClassName={style.activeLink}>News</NavLink>
                     </div>
                     <div className={style.item}>
+                        <NavLink to='/users' activeClassName={style.activeLink}>Users</NavLink>
+                    </div>
+                    <div className={style.item}>
                         <NavLink to='/setting' activeClassName={style.activeLink}>Setting</NavLink>
                     </div>
                 </nav>
 
             <div className={style.sideBarFriends}>
-                <SideBar sideBar={props.sideBar}/>
+                <SideBarContainer />
             </div>
         </div>
     )
